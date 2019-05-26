@@ -1,0 +1,106 @@
+{
+	"id": "d9b467c8-7615-4fb1-aa99-bdd1fdeb90c2",
+	"name": "imdb_python_restapi",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [
+		"1c127bf6-d7dd-4539-8401-e9b190f78c8a",
+		"f08e9b06-fb56-4e42-8e07-0751152ee0b1",
+		"907d09d1-9512-459b-b420-fa904e371236"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "1c127bf6-d7dd-4539-8401-e9b190f78c8a",
+			"name": "Create new movie with genres",
+			"url": "http://localhost:3000/movie",
+			"description": "Create new movie with genres",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb1BheWxvYWQiOnsibmFtZSI6ImthdXNoaWwiLCJyb2xlIjoiQWRtaW4ifSwiaWF0IjoxNTQ5MjIwMjYzLCJleHAiOjE1NDkzMDY2NjN9.yxpdltennUgyXjyRCK2xyjCeZDDWmM9xDnaif93DQFU",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "roleId",
+					"value": "9091",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\"name\":\"The burning train\",\n\"director\": \"Ravi Chopra\",\n\"year\":1980,\n\"rank\":6.8,\n\"genre\": [\n       \"Action\", \"Drama\"\n    ]\n}",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb1BheWxvYWQiOnsibmFtZSI6ImthdXNoaWwiLCJyb2xlIjoiQWRtaW4ifSwiaWF0IjoxNTQ5MjIwMjYzLCJleHAiOjE1NDkzMDY2NjN9.yxpdltennUgyXjyRCK2xyjCeZDDWmM9xDnaif93DQFU\nroleId: 9091\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "907d09d1-9512-459b-b420-fa904e371236",
+			"name": "Search for all movies",
+			"url": "http://localhost:3000/search",
+			"description": "Search for all movie data",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "f08e9b06-fb56-4e42-8e07-0751152ee0b1",
+			"name": "Delete movie",
+			"url": "http://localhost:3000/movie/99",
+			"description": "Delete specified movie",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb1BheWxvYWQiOnsibmFtZSI6ImthdXNoaWwiLCJyb2xlIjoiQWRtaW4ifSwiaWF0IjoxNTQ5MjIwMjYzLCJleHAiOjE1NDkzMDY2NjN9.yxpdltennUgyXjyRCK2xyjCeZDDWmM9xDnaif93DQFU",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "roleId",
+					"value": "9091",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "//Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb1BheWxvYWQiOnsibmFtZSI6ImthdXNoaWwiLCJyb2xlIjoiQWRtaW4ifSwiaWF0IjoxNTQ5MjIwMjYzLCJleHAiOjE1NDkzMDY2NjN9.yxpdltennUgyXjyRCK2xyjCeZDDWmM9xDnaif93DQFU\nroleId: 9091\n",
+			"pathVariables": {}
+		}
+	]
+}
