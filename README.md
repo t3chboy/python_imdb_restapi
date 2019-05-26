@@ -67,6 +67,8 @@ Since We had requirment to handle traffic approx ~15M Apis
   
   - We can also store data using `ElasticSearch` based on `genres`, since its inverted index helps to fetch data more faster than using Mysql Joins.
   
+  - We can also add a initial API Gateway layer like `Netflix ZUUL` or `Nginx Kong` to reduce overhead on app, as many static request and bad request can be responded from here and also we can perform Authentication, request throttling, request metrics and security validations with this. 
+  
   - We can use `microservice` based architecture to scale our application X times.
     1. While runnning marketting campaign for a particular movie or genre.
     2. Release of a particular movie. 
