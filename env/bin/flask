@@ -1,4 +1,5 @@
-#!/var/python/pyimdb/env/bin/python3
+#!/var/projects/python/python_imdb_restapi/env/bin/python3
+
 # -*- coding: utf-8 -*-
 import re
 import sys
