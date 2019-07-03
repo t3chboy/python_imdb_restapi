@@ -16,5 +16,6 @@ api.add_resource(Metrics,'/metrics')
 api.add_resource(Imdb, '/search', endpoint='get')
 
 
+
 # start app on specified port
 my_app.run(host='0.0.0.0', port=8000, debug=True)
