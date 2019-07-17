@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/env/src/fyndexception" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/env/src/fyndlogger" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/env/src/metricsfactory" vcs="Git" />
   </component>
 </project>

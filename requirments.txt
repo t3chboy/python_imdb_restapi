@@ -1,0 +1,3 @@
+-e git+git@gitlab.com:fynd/ops-engg/libraries/fynd-logger.git#egg=FyndLogger
+-e git+git@gitlab.com:fynd/ops-engg/libraries/fynd-exceptions.git@ftr/fynd-exception#egg=FyndException
+-e git+git@gitlab.com:fynd/ops-engg/libraries/fynd-metrics.git@ftr/testpromethuesfactory#egg=MetricsFactory

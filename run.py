@@ -13,9 +13,10 @@ api = Api(my_app)
 
 # register routes with resources
 api.add_resource(Metrics,'/metrics')
-api.add_resource(Imdb, '/search', endpoint='get')
+api.add_resource(Imdb, '/myntra_search', endpoint='get')
+api.add_resource(Imdb, '/myntra_add', endpoint='post')
 
 
 
 # start app on specified port
-my_app.run(host='0.0.0.0', port=8000, debug=True)
+my_app.run(host='0.0.0.0', port=8001, debug=True)
